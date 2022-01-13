@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(19, 1, 1);
+        }
+        a{
+        color: rgb(72, 22, 163);
+        text-decoration: none;
+        font-weight: normal;
+        }
+        a:visited{
+           color: rgb(85, 55, 219);
+           
+
+        }
+        a:active{
+            color: rgb(241, 235, 235);
+            background-color: rgb(207, 230, 6);
+        }
+        a:hover{
+            color: rgb(19, 2, 10);
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        a::before{
+            content: '[link]';
+            font-weight: bold;
+            color: rgb(12, 12, 12);
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        button:active{
+            background-color: blue;
+            color: white;
+        }
+        h1{
+            font: italic normal 3em arial,verdana,serif;
+        }
+        h1:hover{
+            background-color: yellow;
+            color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudo-elementos</h1>
+    <ul>
+        <li><a href="https://www.bet365.com/#/HO/" target="_blank">Site da bet365</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">site do youtube</a></li>
+        <li><a href="https://www.netflix.com/br/" target="_blank">site de filmes</a></li>
+    </ul>
+    <button>Confirmar</button>
+</body>
+</html>

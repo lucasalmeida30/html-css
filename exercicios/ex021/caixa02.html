@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            font-family: (Arial, Helvetica, sans-serif);
+            background-image: url('fundo.jpg');
+        }
+        header > h1{
+            background-image: linear-gradient( to right, rgba(94, 94, 94, 0.719), rgba(173, 173, 173, 0.836));
+            text-align: center;
+            padding: 4px;
+            color: rgba(255, 255, 255, 0.781);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.486);
+        }
+        header > nav{
+            background-color: rgb(161, 161, 161);
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+       nav > a{
+           color: rgba(255, 255, 255, 0.829);
+           margin: 3px;
+           text-decoration: none;
+           font-weight: bold;
+       }
+       nav > a:hover{
+           text-decoration: underline;
+
+       }
+       nav > :active{
+           background-color: black;
+           color: white;
+       }
+       section{
+           background-color: rgba(255, 255, 255, 0.904);
+           padding: 5px;
+           border-radius: 30px 0px;
+           margin-bottom: 10px;
+       }
+       article{
+           background-color: rgba(255, 255, 255, 0.904);
+           padding: 5px;
+           border-radius: 30px 0px ;
+       }
+       footer{
+           background-color: black;
+           color: white;
+           text-align: center;
+           padding: 4px;
+           margin-top: 5px;
+       }
+       footer > p{
+           margin: 0px;
+       }
+       h2{
+           color: lightslategrey;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Esportes</h1>
+        <nav>
+            <a href="#">Nba</a>
+            <a href="#">Futebol</a>
+            <a href="#">Tênis</a>
+            <a href="#">vôlei</a>
+        </nav>
+    </header>   
+    <main>
+        <section>
+            <h2>Veja quais são os jogos de hoje</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias obcaecati, illo et laboriosam voluptatibus fuga minima animi similique blanditiis provident, magnam cupiditate at dolorum corporis praesentium molestiae nihil, nulla debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure corrupti vel iusto dolores illum laborum ea quisquam omnis excepturi debitis quam inventore, atque aliquam autem itaque facere ab praesentium officia? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, illo. Qui quidem voluptatum consequuntur veniam eos debitis in. Quod, autem eaque distinctio rem amet tenetur perferendis suscipit illo dicta enim. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quisquam maiores unde iure expedita fuga molestias aut provident, omnis dolor earum perferendis tempore sed voluptatum alias accusamus! Id, dolore soluta.</p>
+        </section>
+        <article>
+            <h2>resultados de ontem 08/01</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo distinctio et vero nesciunt autem facere! Accusantium, odio? Velit, veniam blanditiis. Aspernatur sunt consequatur rem nemo consequuntur expedita cupiditate? Dolorum, officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis officiis quod facilis illo eos nihil minus dignissimos aperiam delectus ut commodi ipsam nesciunt iure culpa, enim, aliquam suscipit eligendi?</p>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Lucas almeida</p>
+
+    </footer>
+</body>
+</html>
