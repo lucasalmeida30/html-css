@@ -6,14 +6,16 @@ body{
 header{
     background-color: black;
     color: white;
-    min-height: 250px;
+    min-height: 270px;
     text-align: center;
     margin: 0px;
+    width: 100%;
 }
 header > h1{
-    font-size: 3em;
+    font-size: 2em;
     padding-top: 70px;
     margin: 0px;
+    
 }
 header > p{
     font-size: 1.2em;
@@ -37,12 +39,24 @@ section{
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.205);
     width: 350px;
+    margin-left: 30px;
 }
 .normal{
     background-color: white;
     color: black;
 }
 .imagem{
-    background-color: rgb(58, 58, 58);
     color: white;
+    background-image: url("imagens/background001.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-left: 0px;
+    
+}
+#imagem2{
+    background-image: url("imagens/background002.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
 }
