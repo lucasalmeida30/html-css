@@ -17,12 +17,27 @@
            font-size: 1.5em;
            font-weight: bold;
        }
-       td , th{
+       th{
            border: 1px solid black;
            padding: 10px;
+           background-color: gray;
+           color: white;
        }
        td{
            text-align: center;
+           border: 1px solid black;
+           padding: 10px;   
+       }
+       .esquerda{
+           text-align: left;
+       }
+       .branco{
+           background-color: white;
+           color: black;
+       }
+       .cinza{
+           background-color: gray;
+           color: white;
        }
    </style>
 </head>
@@ -31,62 +46,62 @@
         <caption>Notas Escolares</caption>
         <thead>
           <tr>
-              <th rowspan="2">Área</th>
-              <th rowspan="2">Diciplinas</th>
-              <th colspan="2">Notas</th>
-              <th rowspan="2">Médias</th>
+              <th scope="col" rowspan="2">Área</th>
+              <th scope="col" rowspan="2">Diciplinas</th>
+              <th scope="colgroup" colspan="2">Notas</th>
+              <th scope="col" rowspan="2">Média</th>
           </tr>
           <tr>
-              <th>Nota 1</th>
-              <th>Nota 2</th>
+              <th scope="col">Nota 1</th>
+              <th scope="col">Nota 2</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-              <th rowspan="4">Exatas</th>
-              <td>Matemática</td>
+              <th scope="rowgroup" class="branco" rowspan="4">Exatas</th>
+              <td class="esquerda" >Matemática</td>
               <td>8.0</td>
               <td>6.5</td>
+              <td>7.5</td>
+          </tr>
+          <tr>
+              <td class="esquerda" >Física</td>
+              <td>10</td>
+              <td>8.0</td>
               <td>9.0</td>
           </tr>
           <tr>
-              <td>Física</td>
-              <td>10</td>
-              <td>8.0</td>
-              <td>7.5</td>
-          </tr>
-          <tr>
-              <td>Química</td>
+              <td class="esquerda" >Química</td>
               <td>5.0</td>
               <td>6.5</td>
-              <td>7.0</td>
+              <td>6.0</td>
           </tr>
           <tr>
-              <td>Biologia</td>
+              <td class="esquerda" >Biologia</td>
               <td>8.0</td>
               <td>7.0</td>
-              <td>0</td>   
+              <td>8.0</td>   
           </tr>
           <tr>
-              <th colspan="4">Média de Exatas</th>
-              <td>0.0</td>
+              <th scope="row" class="esquerda" colspan="4">Média de Exatas</th>
+              <td class="cinza" >7.65</td>
           </tr>
           <tr>
-              <th rowspan="2">Humanas</th>
-              <td>História</td>
+              <th scope="rowgroup" class="branco" rowspan="2">Humanas</th>
+              <td class="esquerda" >História</td>
               <td>8.0</td>
               <td>10</td>
+              <td>9.0</td>
+          </tr>
+          <tr>
+              <td class="esquerda" >Geográfia</td>
+              <td>7.5</td>
+              <td>8.5</td>
               <td>8.0</td>
           </tr>
           <tr>
-              <td>Geográfia</td>
-              <td>7.5</td>
-              <td>8.5</td>
-              <td>0.0</td>
-          </tr>
-          <tr>
-              <th colspan="4">Média de Humanas</th>
-              <td>0.0</td>
+              <th scope="row" class="esquerda" colspan="4">Média de Humanas</th>
+              <td class="cinza">8.5</td>
           </tr>
 
         </tbody>
